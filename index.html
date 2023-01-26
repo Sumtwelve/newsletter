@@ -4,106 +4,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/skeleton.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        <title>Newsletter</title>
+        <title>NewsLibs</title>
     </head>
     <body>
-        <header>
-            <h1>Newsletter</h1>
-            <!-- image tag to hold our logo if we want to make one.
-            clicking on the image takes you to home page because that is fun -->
-            <img>
-        </header>
-
         <main>
-            <h2>Newsletter Preferences</h2>
-            <p>Select which newsletters you'd like to receive. Click on the tabs to sort by frequency.</p>
-            <div class="newsletter-and-sidebar-box">
-                <section class="newsletter-section">
-                    <div class="newsletter-options-box"> <!-- TODO: flex -->
-                        <div class="filter-tabs-box">
-                            <button type="button" id="filter-all-btn" class="filter-btn">All</button>
-                            <button type="button" id="filter-daily-btn" class="filter-btn">Daily</button>
-                            <button type="button" id="filter-weekly-btn" class="filter-btn">Weekly</button>
-                            <button type="button" id="filter-centenially-btn" class="filter-btn">Cententially</button>
-                        </div>
-                        <div class="subscribe-all-box">
-                            <label for="sub-all-toggle">Subscribe to all</label>
-                            <input type="checkbox" name="sub-all-toggle">
-                        </div>
-                    </div>
-                    <div class="newsletters-box"> <!-- TODO: flex -->
-                        <div class="newsletter-card" id="newsletter-daily">
-                            <h3>The Jag</h3>
-                            <p>The latest news, tips, and tricks on rock climbing. $50</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-daily">
-                            <h3>The Daily 2</h3>
-                            <p>Like days? You'll love this. Like The Daily, but better.</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-daily">
-                            <h3>Monster Business</h3>
-                            <p>For the business moguls who are very, um, monstrous.</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-weekly">
-                            <h3>Google Week</h3>
-                            <p>Like Google? Like weeks? Click here.</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-weekly">
-                            <h3>Junga Weekly</h3>
-                            <p>Secrets of the trade on jungle exploration</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-weekly">
-                            <h3>Lopsiders United</h3>
-                            <p>Not to be confused with Lobsters United</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-cent">
-                            <h3>Systems Admin</h3>
-                            <p>For the big fellas and ladies in charge.</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                        <div class="newsletter-card" id="newsletter-cent">
-                            <h3>SELF-DESTRUCT</h3>
-                            <p>YOU HAVE 10 SECONDS</p>
-                            <input type="checkbox" class="newsletter-toggle">
-                        </div>
-                    </div>
-                </section>
-                <div class="sidebar">
-                    <h4>Share this newsletter!</h4>
-                    <div class="social-share">
-                        <a><img></a>
-                        <a><img></a>
-                        <a><img></a>
-                        <a><img></a>
-                        <a><img></a>
-                    </div>
-                    <h4>About Us</h4>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </div>
+            <h1>NewsLibs</h1>
+            <div class="buttons-container"> <!-- flex -->
+                <button type="button">New Lib</button>
+                <button type="button">Random Lib</button>
+                <button type="button">Instructions</button>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal">
+                <h3>INSTRUCTIONS</h3>
+                <p>Bruh you don't know how to play madlibs? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button type="button" id="close-modal">OK</button>
             </div>
         </main>
-
-        <footer> <!-- TODO: flexbox -->
-            <img>
-            <a>Contact Us</a>
-            <a>Learn more about newsletters</a>
-            <div class="social">
-                <a href="https://facebook.com"><img></a>
-                <a href="https://instagram.com"><img></a>
-                <a href="https://twitter.com"><img></a>
-                <a href="https://youtube.com"><img></a>
-                <a href="https://reddit.com"><img></a>
-            </div>
+        <footer>
+            &copy; 2023 Group 9: Jess, Justice, Noah, and Steve // <a href="https://github.com/Sumtwelve/newslibs">GitHub</a>
         </footer>
-
-        <script src="./assets/js/script.js"></script>
     </body>
 </html>
