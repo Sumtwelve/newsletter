@@ -1,23 +1,72 @@
-HTML
-CSS
-JS
+# TASKS
+
+    ## HTML
+        adding/refining classes and IDs
+        ensuring HTML is valid, clean, and semantic
+        skeleton (css framework)
+
+
+    ## CSS
+        skeleton (css framework)
+        styling
+        fonts (if you don't want to use the default skeleton fonts)
+        color scheme
+        positioning and spacing elements
+        you might need to get rid of play.css and just use style.css, the separation might be unnecessary
+
+
+    ## JAVASCRIPT
+        GoPerigon API (https://www.goperigon.com/) (API key: f52ad48a-9631-4f70-bcba-5913be0363a5)
+            - You *might* need to make your own account, but that's fine because then we'll get more free API calls per month
+            - function to get random article and its content
+            - maybe let the user decide the topic of the randomly chosen article?
+            - truncate article so it's only 4 - 6 sentences long (trying to reduce our number of API calls)
+
+        Words API (https://www.wordsapi.com/) <-- see link for example calls. NO API KEY NEEDED!
+            - blanking out random significant words from article (we can't be blanking words like "the" or "a"
+                - blanking needs to be spaced out, maybe 0 to 2 blanks every sentence
+                - you'll need to loop through and check
+            - finding out what part of speech each blanked word is (verb, noun, adjective, etc.)
+            - building a list in play.html (see assets/word-entry.drawio) to prompt user for each blanked word type
+
+
+    ## PRESENTATION
+        spokesperson (is there only going to be one? we could take turns presenting different parts)
+        elevator pitch
+        order and flow of presentation
+
+
+
+    ## OTHER
+        adding explanatory comments to the code
+        making and refining the README
+        ensuring proper naming conventions (file names, classes, IDs, variables, etc.)
 
 
 
 
-JUSTICE
+# ASSIGNMENTS
+Note that your opinion is welcome on all aspects of the project, even if you're not working on it.
+
+    JESS
+        CSS - styling and skeleton with Justice
+        OTHER - Write the elevator pitch
+        JS - When done with the above, or when you feel like it, help N&S with the JS
 
 
+    JUSTICE
+        CSS - Work with Jess on CSS and skeleton
+        OTHER - Write the README
+        JS - When done with the above, or when you feel like it, help N&S with the JS
 
 
-NOAH
+    NOAH
+        JS - Learn GoPerigon with Stephen, get an article, reduce sentence count
+        JS - Learn WordsAPI with Stephen, blank the words, build the list, rebuild the article
+        OTHER - add explanatory comments
 
 
-
-
-STEPHEN
-
-
-
-
-JESS
+    STEPHEN
+        JS - learn GoPerigon API with Noah, get an article, reduce it to 6 sentences
+        JS - Learn WordsAPI with Noah, blank the words, build the list, rebuild the article
+        OTHER - Ensure proper naming of files, classes, IDs, variables, etc.
