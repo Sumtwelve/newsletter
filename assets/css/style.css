@@ -1,3 +1,18 @@
-.filter-tabs-box {
-    background-color: black;
+html {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.modal {
+    display: none;
+} 
+
+footer {
+    text-align: center;
+    position: fixed bottom 0;
+
 }
