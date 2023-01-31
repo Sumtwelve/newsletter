@@ -89,10 +89,19 @@ function blankTheWords(sentences) {
         var wordInput = document.createElement("input");
         wordInput.setAttribute("id", ("user-word-" + i));
         wordInput.setAttribute("form", "word-entry");
+        wordInput.classList.add("twelve");
+        wordInput.classList.add("columns");
+        wordInput.setAttribute("placeholder", ("Word " + (i+1)));
         wordInput.required = true;
         wordEntryForm.appendChild(wordInput);
     }
-    
+
+    var generateGameBtn = document.createElement("button");
+    generateGameBtn.setAttribute("type", "submit");
+    generateGameBtn.setAttribute("form", "word-entry");
+    generateGameBtn.classList.add("generate-btn");
+    generateGameBtn.textContent = "GENERATE PUZZLE, SEÑOR";
+    wordEntryForm.appendChild(generateGameBtn);
 
     wordEntryForm.addEventListener("submit", function( event ) {
         event.preventDefault();
@@ -109,6 +118,7 @@ function blankTheWords(sentences) {
             sentences[i] = newSentence;
         }
 
+        document.querySelector("h4").remove();
         wordEntryForm.remove();
 
         var finishedArticle = document.createElement("p");

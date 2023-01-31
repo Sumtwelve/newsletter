@@ -3,25 +3,24 @@ html {
     margin: 0 auto;
 }
 
-main {
-    margin-top: 35%;
-    margin-bottom: 40%;
-}
-
 h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
+    padding: 10% 0;
 }
 
 button {    
+    color: white !important;
     background-color: rgb(102, 165, 144);
+    font-size: x-large !important;
     color: black; 
     padding: 8%;
     height: auto;
     text-align: center;
     font-size:medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.2s ease;
 }
 
 button:hover {
@@ -29,12 +28,20 @@ button:hover {
 }
 
 .modal {
-    display: none; 
+    display: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     background-color: rgb(226, 228, 136);
 
-    
+    position: fixed;
+    max-width: 50%;
+    max-height: 75vh;
+    top: 7%;
+    bottom: 15%;
+    border: 1px solid black;
+    padding: 5%;
+
+    transition: all 0.2s ease;
 } 
 
 footer {
