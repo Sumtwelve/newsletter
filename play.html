@@ -7,23 +7,27 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/skeleton.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/play.css">
-        <title>Document</title>
+        <title>NewsLibs | Enter Your Words, Señor</title>
     </head>
     <body>
         <header>
-            <a>👈 Go back</a>
+            <a href="index.html">👈 Go back</a>
             <h1>NewsLibs</h1>
         </header>
         <main>
             <!-- this h4 and form will be removed by the js to load the finished article -->
             <h4>Enter your words, señor.</h4>
             <form id="word-entry">
-                <!-- js will create labels and input fields here -->
-                <button type="submit" form="word-entry"></button>
+                <!-- JS will create labels and input fields here -->
+                <button id="form-button" type="submit" form="word-entry">GENERATE PUZZLE, SEÑOR</button>
             </form>
+            <div id="finished-article-container">
+                <!-- finished article will be populated here via JS -->
+            </div>
         </main>
         <footer>
-            &copy; 2023 Group 9: Jess, Justice, Noah, and Steve // <a href="https://github.com/Sumtwelve/newslibs">GitHub</a>
+            &copy; 2023 Group 9: Jess, Noah, and Steve // <a href="https://github.com/Sumtwelve/newslibs">GitHub</a>
         </footer>
+        <script src="./assets/js/play.js"></script>
     </body>
 </html>
